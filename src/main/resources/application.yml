@@ -1,0 +1,17 @@
+
+spring:
+  main:
+    web-environment: true
+    banner-mode: console
+  resources:
+    add-mappings: false
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  application:
+    name: WebSite
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sample?createDatabaseIfNotExist=true&useSSL=false&useUnicode=yes&characterEncoding=UTF-8
+    username: root
+    password: root
