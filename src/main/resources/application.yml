@@ -7,13 +7,18 @@ spring:
     add-mappings: false
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
+        #hibernate dialect will be placed in here
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate 
+        #place DDL-Auto "validate" to "create" for generate mysql tables automatically. ex:  ddl-auto: create 
   application:
     name: WebSite
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/sample?createDatabaseIfNotExist=true&useSSL=false&useUnicode=yes&characterEncoding=UTF-8
+    url: jdbc:mysql://127.0.0.1:3306/sample?createDatabaseIfNotExist=true&useSSL=false&useUnicode=yes&characterEncoding=UTF-8 
+        #place your mysql installed IP address / port and dbname from here. ex :jdbc:mysql://ipaddress:port/dbname?createDatabaseIfNotExist=true&useSSL=false&useUnicode=yes&characterEncoding=UTF-8 
     username: root
+        #place your mysql username here
     password: root
+        #place your mysql username password

@@ -22,8 +22,6 @@ public class StudentService {
     StudentRepository repository;
 
     public boolean save(String username, String address) {
-//        System.out.println("Username is " + username);
-//        System.out.println("Address is " + address);
 
         try {
             StudentModel student = new StudentModel();

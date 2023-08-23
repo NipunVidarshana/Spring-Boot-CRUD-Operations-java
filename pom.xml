@@ -48,7 +48,7 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mof</groupId>
-    <artifactId>assert</artifactId>
+    <artifactId>system</artifactId>
     <version>1</version>
     <name>spring-boot-back-end</name>
     <packaging>war</packaging>
