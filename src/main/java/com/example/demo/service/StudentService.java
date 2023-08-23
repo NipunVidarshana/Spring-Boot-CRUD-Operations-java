@@ -21,13 +21,10 @@ public class StudentService {
     @Autowired
     StudentRepository repository;
 
-    public boolean save(String username, String address) {
+    public boolean save(StudentModel data) {
 
         try {
-            StudentModel student = new StudentModel();
-            student.setUsername(username);
-            student.setAddress(address);
-            repository.save(student);
+            repository.save(data);
             return true;
         } catch (Exception ex) {
             return false;
