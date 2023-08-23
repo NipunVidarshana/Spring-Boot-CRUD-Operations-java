@@ -1,4 +1,4 @@
-# Spring-Boot-CRUD-Operations-java
+# Spring-Boot-Hibernate-CRUD-Operations-java
 
 Pre requirments
   1) Apache tomcat as a Application Server
